@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Locator';
+  src: local('Locator'), url('../fonts/Locator.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Locator-medium';
+  src: local('Locator-medium'), url('../fonts/Locator-medium.otf') format('truetype');
+}
+
+$regular: 'Locator', sans-serif;
+$medium:'Locator-medium', sans-serif;
+$narrow: 'Montserrat', sans-serif;
+$blue: #009ee3;
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@mixin text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+@mixin img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-cerave.es-cerave {
+  font-family: $regular;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #000;
+  background: #fff;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $regular;
+    color: #000;
+  }
+  .es-mobile-break {
+    display: inline-block;
+  }
+  .es-kv {
+    
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@keyframes slideright {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
