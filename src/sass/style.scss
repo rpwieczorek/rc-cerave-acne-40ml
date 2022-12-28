@@ -158,7 +158,6 @@ body {
   }
   .es-icons {
     margin: 40px auto;
-
     &__text {
       @include text;
       margin: 0 auto;
@@ -188,6 +187,54 @@ body {
       @include text;
       text-align: center;
       font-size: 16px;
+    }
+  }
+  .es-ingriedients {
+    padding: 0 35px;
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &__tile {
+      margin: auto;
+      &--left,--right {
+        
+      }
+    }
+
+    &__title {
+      @include text;
+      font-size: 30px;
+      font-weight: 300;
+      text-align: left;
+      padding-bottom: 40px;
+    }
+    &__single {
+      position: relative;
+      padding-bottom: 30px;
+    }
+    &__item {
+      position: absolute;
+      width: 65px;
+      top: -6px;
+      left: 0;
+    }
+    &__above {
+      @include text;
+      padding-left: 80px;
+      padding-bottom: 5px;
+      border-bottom: solid 3px $green;
+      font-weight: 500;
+    }
+    &__under {
+      @include text;
+      padding-top: 5px;
+      padding-left: 80px;
+    }
+    &__image {
+      @include img;
+      margin: 20px auto
     }
   }
 }
